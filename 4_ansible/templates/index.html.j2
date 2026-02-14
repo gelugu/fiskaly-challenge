@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hello World — {{ ansible_hostname }}</title></head>
+<body>
+  <h1>Hello World</h1>
+  <p>Served by {{ ansible_hostname }} ({{ ansible_default_ipv4.address }})</p>
+  <p>OS: {{ ansible_distribution }} {{ ansible_distribution_version }}</p>
+  <p>Deployed at {{ ansible_date_time.iso8601 }}</p>
+</body>
+</html>
