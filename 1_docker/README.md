@@ -13,7 +13,7 @@ The Dockerfile uses a multi-stage build:
 This is the smallest possible container for a real HTTP server.
 
 `.dockerignore` ensures we are not transferring files we don't need for the build.
-Usually it a security concern. But since we have multistage build, the main reason is docker caching (faster rebuild).
+Usually it's a security concern. But since it's a multistage build, the main reason is the docker caching (faster rebuild).
 
 ## Usage
 

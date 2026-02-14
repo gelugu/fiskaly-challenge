@@ -19,7 +19,7 @@ Key architectural decisions:
 ## Prerequisites
 
 Enable `Kubernetes Engine API` on Cloud Console.
-Make sure to fill `project_id` default value (or use `-var="project_id=my-gcp-project` flag on plan and apply).
+Make sure to fill `project_id` default value (or use `-var="project_id=FIXME` flag on plan and apply).
 
 ## Usage
 

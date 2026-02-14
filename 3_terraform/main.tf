@@ -140,7 +140,7 @@ resource "google_container_cluster" "main" {
 }
 
 resource "google_container_node_pool" "primary" {
-  name     = "${var.cluster_name}-pool"
+  name     = "${var.cluster_name}-primary-pool"
   cluster  = google_container_cluster.main.id
   location = var.region
 
@@ -172,7 +172,7 @@ resource "google_container_node_pool" "primary" {
   }
 }
 
-### Cloud NAT (outbound internet for private nodes)
+### Cloud NAT
 
 resource "google_compute_router" "main" {
   name    = "${var.cluster_name}-router"
